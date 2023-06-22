@@ -37,12 +37,45 @@ flutter의 사이즈 단위는 LP
 위젯( child: 위젯() )
 ```
  형식이라고 볼 수 있다!
+
+#### 1강 완성물
+![img.png](img.png)
+
+
  
+#### `MaterialApp()`
+Material 테마를 이용해서 앱을 쉽게 만들 수 있게 도와주는 함수
+유용한 UI들 사용 가능
+커스터마이징하고 싶을때에도 사용 가능
+
+#### `Scaffold()`
+앱을 상중하로 나눠줌
+
+#### `Row( children: [] )`
+여러 위젯을 가로로 배치하는 법
+```dart
+body: Row(
+          children: [
+            Icon(Icons.star),
+            Icon(Icons.star),
+            Icon(Icons.star),
+          ]
+        ),
+```
+![img_2.png](img_2.png)
+
+세로로 배치하고 싶을때에는 `Row` 대신 `Column` 사용하면 됨.
+
+#### `mainAxisAlignment: MainAxisAlignment.원하는정렬형태`
+(Row일때 mainAxis는 가로축)
+center: 중앙정렬하고 싶을때
+spaceEvenly: 일정한 간격을 주고 싶을때 (flex와 유사)
+
+#### `crossAxisAlignment: CrossAxisAlignment.원하는정렬형태`
+(Row일때 crossAxis는 세로축)
 
 
-
-
-
+> 자동완성은 control+spacebar 누르면 뜬다!
 
 
 
