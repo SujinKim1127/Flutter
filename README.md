@@ -41,7 +41,7 @@ flutter의 사이즈 단위는 LP
 #### 1강 완성물
 ![img.png](img.png)
 
-
+---
  
 #### `MaterialApp()`
 Material 테마를 이용해서 앱을 쉽게 만들 수 있게 도와주는 함수
@@ -69,15 +69,22 @@ body: Row(
 #### `mainAxisAlignment: MainAxisAlignment.원하는정렬형태`
 (Row일때 mainAxis는 가로축)
 center: 중앙정렬하고 싶을때
-spaceEvenly: 일정한 간격을 주고 싶을때 (flex와 유사)
+spaceEvenly: 일정위한 간격을 주고 싶을때 (flex와 유사)
 
 #### `crossAxisAlignment: CrossAxisAlignment.원하는정렬형태`
 (Row일때 crossAxis는 세로축)
 
-
 > 자동완성은 control+spacebar 누르면 뜬다!
 
+#### `BottomAppBar` 높이 조절 방법
+Container 또는 Sizedbox 로 감싸주면 된다
+SizedBox는 Container보다 가벼워서 width, height, child만 필요할때 사용하면 된다.
 
+
+#### 2강 완성물
+![img_3.png](img_3.png)
+
+---
 
 
 
