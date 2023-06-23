@@ -13,19 +13,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("상위"),
+          leading: Icon(Icons.person),
+          title: Text("text")
         ),
-        body: Align(
-          alignment: Alignment.bottomCenter,
-          child: Container(
-            width: double.infinity, height: 50,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.black)
-            ),
-            margin: EdgeInsets.fromLTRB(0, 30,0,0),
-            child: Text("안쪽글씨"),
-          ),
-        ),
+        body: SizedBox(
+          child: IconButton(
+            icon: Icon(Icons.star),
+            onPressed: () {},
+          )
+          // Text("안녕하세요",
+          //   style: TextStyle(
+          //       fontSize: 30,
+          //       color: Colors.blue,
+          //       fontWeight: FontWeight.w600),
+          // )
+        )
       )
     );
   }

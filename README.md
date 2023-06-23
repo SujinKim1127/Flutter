@@ -96,4 +96,70 @@ Center, Align 등등으로 감싸기
 width: double.infinity
 
 
+---
+
+#### 글자 디자인하는 법
+`style: TextStyle()`
+
+색 넣어주는 법
+1. `Colors.컬러명`
+2. `Color(0xffaaa)`
+3. `Color.fromRGBO()`
+
+글자 크기: `fontSize: 00`
+
+자간: `letterSpacing: 00`
+
+글자 두께: `fontWeight: FontWeight.w700`
+w700: 100~900까지 조정 가능
+
+#### 아이콘 디자인하는 법
+color, size 만 디자인 가능
+
+
+#### 버튼 디자인하는 법
+- TextButton()
+- IconButton()
+- ElevatedButton() : 공중에 띄워진 느 ㅁ
+중 택 1
+
+버튼 안에는 child: , onPressed: () {} 넣어야 잘 보인다.
+```dart
+        body: SizedBox(
+          child: ElevatedButton(
+            child: Text("text"),
+            onPressed: () {},
+            style: ButtonStyle(),
+          )
+
+        body: SizedBox(
+            child: IconButton(
+                icon: Icon(Icons.star),
+                onPressed: () {},
+            )
+
+```
+
+### AppBar 디자인
+leading: 왼쪽에 넣을때 주로 사용
+actions: 우측에 넣을때 사용
+
+#### 레이아웃 혼자서 잘 짜는 법
+1. 예시디자인 준비 (없으면 다른앱 베끼기)
+2. 예시화면에 네모그리기 (빈공간 없게 네모 그리기)
+3. 바깥 네모부터 하나하나 위젯으로 만들기
+![img_4.png](img_4.png)
+4. 마무리 디자인
+
+
+
+
+
+
+
+
+
+
+
+
 > [🔗 코딩애플: 쉽게 알려주는 플러터 강의](https://youtube.com/playlist?list=PLfLgtT94nNq1izG4R2WDN517iPX4WXH3C) 보고 정리
