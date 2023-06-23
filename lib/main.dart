@@ -15,21 +15,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("상위"),
         ),
-        body: Container(
-          child: Text("안녕"),
-        ),
-        bottomNavigationBar: BottomAppBar(
-          child: SizedBox(
-              height: 70,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Icon(Icons.phone),
-                  Icon(Icons.message),
-                  Icon(Icons.contact_page)
-                ],
-              )
-          )
+        body: Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            width: double.infinity, height: 50,
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black)
+            ),
+            margin: EdgeInsets.fromLTRB(0, 30,0,0),
+            child: Text("안쪽글씨"),
+          ),
         ),
       )
     );

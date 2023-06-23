@@ -86,6 +86,14 @@ SizedBox는 Container보다 가벼워서 width, height, child만 필요할때 �
 
 ---
 
+#### Box deco 하는 법
+decoration: BoxDecoration() 사용하기
+
+#### 박스 위치 정렬
+Center, Align 등등으로 감싸기
+
+#### 박스 가로로 꽉 채우기
+width: double.infinity
 
 
 > [🔗 코딩애플: 쉽게 알려주는 플러터 강의](https://youtube.com/playlist?list=PLfLgtT94nNq1izG4R2WDN517iPX4WXH3C) 보고 정리
