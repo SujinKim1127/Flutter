@@ -151,13 +151,33 @@ actions: 우측에 넣을때 사용
 ![img_4.png](img_4.png)
 4. 마무리 디자인
 
+---
+### Flexible Expanded
+css flex랑 비슷
+```dart
+        body:
+          Row(
+            children: [
+              Flexible(child: Container(color: Colors.lightBlue,), flex: 3),
+              Flexible(child: Container(color: Colors.green,), flex: 7),
+            ],
+          )
+```
+3대 7 비율로 작성
+![img_5.png](img_5.png)
+column도 마찬가지임
 
-
-
-
-
-
-
+`Expanded`: flex가 1인 flexible 박스와 똑같음
+```dart
+        body:
+          Row(
+            children: [
+              Expanded(child: Container(color: Colors.lightBlue,)),
+              Container(color: Colors.green,width: 100,),
+            ],
+          )
+```
+![img_6.png](img_6.png)
 
 
 

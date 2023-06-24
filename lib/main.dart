@@ -23,37 +23,44 @@ class MyApp extends StatelessWidget {
             Icon(Icons.add_alert_sharp)
           ],
         ),
-        body: SizedBox(
-          child: Row(
+        body:
+          Row(
             children: [
-              Image.asset("dogface.png"),
-              SizedBox(
-                child: Column(
-                  children: [
-                    Text("캐논 DSLR 100D (단렌즈, 충전기 16기가SD 포함)",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600
-                      ),textAlign: TextAlign.left,),
-                    Text("ㅇㅇ구 ㅇㅇ동 - 끌올 10분 전"),
-                    Text("9000원",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600
-                    ),
-                    ),
-                    SizedBox(
-                      child: Row(
-                        children: [
-                          Icon(Icons.heart_broken_rounded),
-                          Text("7")
-                        ],
-                      )
-                    )
-                  ],
-                ),
-              )
+              Expanded(child: Container(color: Colors.lightBlue,)),
+              Container(color: Colors.green,width: 100,),
             ],
           )
-        )
+        // SizedBox(
+        //   child: Row(
+        //     children: [
+        //       Image.asset("dogface.png"),
+        //       SizedBox(
+        //         child: Column(
+        //           children: [
+        //             Text("캐논 DSLR 100D (단렌즈, 충전기 16기가SD 포함)",
+        //               style: TextStyle(
+        //                 fontWeight: FontWeight.w600
+        //               ),textAlign: TextAlign.left,),
+        //             Text("ㅇㅇ구 ㅇㅇ동 - 끌올 10분 전"),
+        //             Text("9000원",
+        //             style: TextStyle(
+        //               fontWeight: FontWeight.w600
+        //             ),
+        //             ),
+        //             SizedBox(
+        //               child: Row(
+        //                 children: [
+        //                   Icon(Icons.heart_broken_rounded),
+        //                   Text("7")
+        //                 ],
+        //               )
+        //             )
+        //           ],
+        //         ),
+        //       )
+        //     ],
+        //   )
+        // )
       )
     );
   }
