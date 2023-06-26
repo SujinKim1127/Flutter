@@ -179,6 +179,49 @@ column도 마찬가지임
 ```
 ![img_6.png](img_6.png)
 
+---
+
+#### 레이아웃용 위젯들이 너무 길다면?
+-> **커스텀 위젯** 만들기
+
+`stless` 입력하면 자동완성으로 커스텀 위젯 틀이 나온다.
+1. class 작명하기
+2. return문에 축약할 레이아웃 넣기
+```dart
+class ShopItem extends StatelessWidget {
+  const ShopItem ({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: Text("안녕"),
+    );
+  }
+}
+```
+1. 커스텀 위젯은 class로 만든다
+   - class: 변수, 함수 보관함
+커스텀 위젯이 되려면 class안에 변수, 함수를 많이 넣어야 한다
+-> 이미 완성된 위젯 복사해서 class 만들기
+2. class에 어떤 파라미터 넣을 수 있는지 정의
+4. `override`: 중복 발생시 내꺼 먼저 적용해달라는 의미
+5. class안에 build라는 함수 만드는 부분
+   - build안 return에 축약할 위젯 넣어야 한다
+
+
+> 이런거 사용할 필요없이 변수에 담아서 사용해도 된다
+> -> 대신 성능 이슈 있음
+> -> 변하지 않는 UI들은 변수 함수로 축약해도 상관없음
+
+```dart
+var a = SizedBox(
+  child: Text("안녕"),
+);  // SizedBox
+```
+
+아무거나 다 커스텀위젯화해서는 안된다
+state 관리가 힘들어질 수도 있다
+
 
 
 
