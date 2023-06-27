@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: ShopItem()
+        body: ListView(
+          children: [
+            Text("hi")
+          ],
+        )
       )
     );
   }
@@ -29,4 +33,4 @@ class ShopItem extends StatelessWidget {
     );
   }
 }
-다
+
