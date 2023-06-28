@@ -13,11 +13,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
+        bottomNavigationBar: BottomAppBar(
+          child: SizedBox(
+            height: 60,
+            child: Row(
+              children: [
+                Expanded(child: bottomIcon(Icon(Icons.call))),
+                Expanded(child: bottomIcon(Icon(Icons.message))),
+                Expanded(child: bottomIcon(Icon(Icons.person))),
+              ],
+            ),
+          )
+        ),
         body: ListView(
           children: [
-            Text("hi")
+            profile(),
+            profile(),
+            profile(),
           ],
-        )
+        ),
       )
     );
   }
@@ -34,3 +48,30 @@ class ShopItem extends StatelessWidget {
   }
 }
 
+class profile extends StatelessWidget {
+  const profile({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: Row(
+        children: [
+          Icon(Icons.person),
+          Text('name')
+        ],
+      ),
+    );
+  }
+}
+
+class bottomIcon extends StatelessWidget {
+  final Icon iconImage;
+  bottomIcon(this.iconImage);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: iconImage,
+    );
+  }
+}
