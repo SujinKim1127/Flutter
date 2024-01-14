@@ -60,3 +60,49 @@ nico = null;
 > dart의 변수는 기본적으로 nullable이 아니다.
 >
 > `nullable`로 만들고 싶으면 물음표 꼭 넣기
+
+### Final Variables
+
+한번 정의된 변수를 수정할 수 없게 만들때 사용
+
+```dart
+  final user = 'sujin';
+  user = '1127';
+```
+
+`The final variable 'user' can only be set once.` 에러 발생
+
+원하면 타입 추가 가능 `fianl String user = 'sujin'; `
+
+### Late Variables
+
+final이나 var 앞에 붙여줄 수 있는 수식어
+
+`late final String name;` 형식으로 적기 가능
+
+late는 초기 데이터 없이 변수를 선언가능하게 해준다.
+
+변수가 없는데 데이터가 만들어진 것이라고 볼 수 있다
+
+실수를 막아준다는 것이 좋음
+
+값을 넣기 전에는 접근하면 안된다고 경고를 준다
+
+flutter로 data fetching 할때 유용
+
+flutter에서 API 작업할때 많이 보인다
+
+### const
+
+dart의 const는 javascript랑 typescript랑 다름
+
+javascript와 typescript의 const는 dart의 final과 비슷
+
+dart의 const는 compile-time constant를 만들어준다
+
+compile-time constant란?
+
+- const로 선언하면 final과 똑같이 수정이 안된다
+- const는 compile-time에 대해 알고 있는 값
+- const: 앱스토어에 앱을 올리기 전에 알고 있는 값
+- 어떤 값인지 모르고, 그 값이 API로부터 오는 오는 값이면, 사용자가 화면에서 입력해야하는 값이면 => final or var 이 되어야함
